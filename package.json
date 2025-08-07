@@ -1,6 +1,6 @@
 {
   "name": "@listenrightmeeow/newk-plugin-image-optimization",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Advanced image optimization with WebP conversion, compression, and responsive image generation",
   "type": "module",
   "main": "dist/index.js",

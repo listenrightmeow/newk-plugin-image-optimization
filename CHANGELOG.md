@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/listenrightmeow/newk-plugin-image-optimization/compare/v1.0.0...v1.0.1) (2025-08-07)
+
+
+### Bug Fixes
+
+* correct NPM scope to [@listenrightmeeow](https://github.com/listenrightmeeow) and add public access ([13dca94](https://github.com/listenrightmeow/newk-plugin-image-optimization/commit/13dca942423a4d9d483a11d3820734e7e6a9a47e))
+
 # 1.0.0 (2025-08-07)
 
 
