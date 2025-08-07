@@ -1,5 +1,5 @@
 {
-  "name": "@listenrightmeow/newk-plugin-image-optimization",
+  "name": "@listenrightmeeow/newk-plugin-image-optimization",
   "version": "1.0.0",
   "description": "Advanced image optimization with WebP conversion, compression, and responsive image generation",
   "type": "module",
@@ -28,7 +28,7 @@
     "avif",
     "lazy-loading"
   ],
-  "author": "@listenrightmeow",
+  "author": "@listenrightmeeow",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -56,5 +56,8 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
