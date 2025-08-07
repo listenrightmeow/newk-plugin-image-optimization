@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "fast-glob": "^3.3.3",
-    "sharp": "^0.33.0"
+    "sharp": "^0.34.3"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
