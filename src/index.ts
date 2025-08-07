@@ -1,1 +1,33 @@
-// @listenrightmeow/newk-plugin-image-optimization
+import { ReplrodOptimizationPlugin } from '@listenrightmeow/replrod/plugin/OptimizationPlugin';
+import { ImageOptimizer } from './ImageOptimizer.js';
+
+const plugin: ReplrodOptimizationPlugin = {
+  metadata: {
+    name: '@listenrightmeow/replrod-plugin-image-optimization',
+    version: '1.0.0',
+    description: 'Image optimization with WebP/AVIF conversion for replrod',
+    author: '@listenrightmeow',
+    expectedImprovement: '50-80% smaller images'
+  },
+  optimization: new ImageOptimizer(),
+  
+  async onLoad() {
+    console.debug('Image optimization plugin loaded');
+  },
+  
+  async onUnload() {
+    console.debug('Image optimization plugin unloaded');
+  }
+};
+
+export default plugin;
+export { plugin };
+
+// Export internal modules for testing
+export { ImageScanner } from './ImageScanner.js';
+export { ImageProcessor } from './ImageProcessor.js';
+export { HtmlReplacer } from './HtmlReplacer.js';
+export { CssReplacer } from './CssReplacer.js';
+export { PreloadGenerator } from './PreloadGenerator.js';
+export { ImageManifest } from './ImageManifest.js';
+export { ImageOptionsFactory } from './ImageOptions.js';
