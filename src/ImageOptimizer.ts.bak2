@@ -2,7 +2,7 @@ import {
   OptimizationPlugin, 
   OptimizationContext, 
   OptimizationResult 
-} from './types';
+} from '@listenrightmeow/newk/plugin/OptimizationPlugin';
 import { ImageScanner } from './ImageScanner.js';
 import { ImageProcessor, ProcessedImage } from './ImageProcessor.js';
 import { HtmlReplacer } from './HtmlReplacer.js';
@@ -25,10 +25,6 @@ export class ImageOptimizer implements OptimizationPlugin {
   private cssReplacer = new CssReplacer();
   private preloadGen = new PreloadGenerator();
   private manifest = new ImageManifest();
-
-  async apply(context: OptimizationContext): Promise<OptimizationResult> {
-    return this.optimize(context);
-  }
 
   async isApplicable(context: OptimizationContext): Promise<boolean> {
     return this.scanner.hasImages(context.projectPath);
@@ -171,7 +167,7 @@ export class ImageOptimizer implements OptimizationPlugin {
     return {
       success: true,
       message: `Optimized ${data.processed} images`,
-      details: {
+      metrics: {
         improvement: `${savings}% reduction in image sizes`,
         timeBefore: start,
         timeAfter: Date.now()

@@ -1,4 +1,4 @@
-import { ReplrodOptimizationPlugin } from './types';
+import { ReplrodOptimizationPlugin } from '@listenrightmeow/newk/plugin/OptimizationPlugin';
 import { ImageOptimizer } from './ImageOptimizer.js';
 
 const plugin: ReplrodOptimizationPlugin = {

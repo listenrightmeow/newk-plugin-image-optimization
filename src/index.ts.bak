@@ -1,9 +1,9 @@
-import { ReplrodOptimizationPlugin } from './types';
+import { ReplrodOptimizationPlugin } from '@listenrightmeow/replrod/plugin/OptimizationPlugin';
 import { ImageOptimizer } from './ImageOptimizer.js';
 
 const plugin: ReplrodOptimizationPlugin = {
   metadata: {
-    name: '@listenrightmeow/newk-plugin-image-optimization',
+    name: '@listenrightmeow/replrod-plugin-image-optimization',
     version: '1.0.0',
     description: 'Image optimization with WebP/AVIF conversion for replrod',
     author: '@listenrightmeow',
