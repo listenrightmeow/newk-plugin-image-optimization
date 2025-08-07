@@ -1,0 +1,59 @@
+{
+  "name": "@listenrightmeow/newk-plugin-image-optimization",
+  "version": "0.0.0-semantic-release",
+  "description": "Advanced image optimization with WebP conversion, compression, and responsive image generation",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Tests coming soon\"",
+    "lint": "echo \"Linting coming soon\"",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "newk",
+    "image-optimization",
+    "webp",
+    "compression",
+    "responsive-images",
+    "performance",
+    "sharp",
+    "avif",
+    "lazy-loading"
+  ],
+  "author": "@listenrightmeow",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/listenrightmeow/newk-plugin-image-optimization.git"
+  },
+  "bugs": "https://github.com/listenrightmeow/newk-plugin-image-optimization/issues",
+  "homepage": "https://github.com/listenrightmeow/newk-plugin-image-optimization#readme",
+  "newk": {
+    "type": "optimization",
+    "category": "performance",
+    "priority": 9
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.3",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/sharp": "^0.32.0",
+    "rimraf": "^5.0.0",
+    "semantic-release": "^21.1.2",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
